@@ -113,7 +113,7 @@ async function updateXP(difficulty, score) {
     f.append("difficulty", difficulty);
     f.append("score", score);
 
-    await fetch("https://jdzx3jb9-8000.inc1.devtunnels.ms/update_xp", {
+    await fetch("https://winter123.onrender.com/update_xp", {
         method: "POST",
         headers: { "Authorization": "Bearer " + token },
         body: f
