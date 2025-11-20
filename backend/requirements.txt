@@ -8,4 +8,5 @@ motor
 passlib[bcrypt]
 PyJWT
 google-generativeai
+python-multipart
 
