@@ -1,5 +1,11 @@
+pymongo
+python-jwt   # or “pyjwt”
 fastapi
 uvicorn
-pymongo
+pydantic
+python-dotenv
+motor
 passlib[bcrypt]
-python-jwt   # or “pyjwt”
+PyJWT
+google-generativeai
+
