@@ -30,7 +30,11 @@ client = AsyncIOMotorClient("mongodb+srv://Winter:scarjo%4055435@cluster0.uppfsq
 db = client["quiz_app"]
 users_col = db["users"]
 
-pwd = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd = CryptContext(
+    schemes=["pbkdf2_sha256"],
+    deprecated="auto"
+)
+
 security = HTTPBearer()
 SECRET_KEY = "j23nfd92nf923nf92309f23nf923nf9230f"
 
