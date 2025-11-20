@@ -5,7 +5,7 @@ uvicorn
 pydantic
 python-dotenv
 motor
-passlib[bcrypt]
+passlib
 PyJWT
 google-generativeai
 python-multipart
