@@ -240,7 +240,7 @@ authForm.addEventListener('submit', async (e) => {
 
     if (!isLogin) {
         // SIGNUP
-        const res = await fetch("https://jdzx3jb9-8000.inc1.devtunnels.ms/signup", { method: "POST", body: formData });
+        const res = await fetch("https://winter123.onrender.com/signup", { method: "POST", body: formData });
         const data = await res.json();
         if (data.status === "success") {
             alert("Account created! Login now.");
@@ -250,7 +250,7 @@ authForm.addEventListener('submit', async (e) => {
         }
     } else {
         // LOGIN
-        const res = await fetch("https://jdzx3jb9-8000.inc1.devtunnels.ms/login", { method: "POST", body: formData });
+        const res = await fetch("https://winter123.onrender.com/login", { method: "POST", body: formData });
         const data = await res.json();
 
         if (data.status === "success") {
