@@ -6,7 +6,7 @@ async function loadDashboard() {
     }
 
     try {
-        const res = await fetch("https://jdzx3jb9-8000.inc1.devtunnels.ms/me", {
+        const res = await fetch("https://winter123.onrender.com/me", {
             headers: {
                 "Authorization": "Bearer " + token
             }
