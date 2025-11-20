@@ -40,6 +40,10 @@ SECRET_KEY = "j23nfd92nf923nf92309f23nf923nf9230f"
 
 # Gemini API
 GEMINI_KEY = os.getenv("GEMINI_KEY")
+if not GEMINI_KEY:
+    print("❌ GEMINI KEY MISSING (Render)")
+else:
+    print("✅ GEMINI KEY LOADED SUCCESSFULLY")
 genai.configure(api_key=GEMINI_KEY)
 
 # XP rules
